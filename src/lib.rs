@@ -1,6 +1,7 @@
-use std::io::Error;
-use std::iter::Map;
+use crate::save::save;
 
-pub fn export_inputs(raw_inputs: Map<u32,char>) -> Result<(), Error> {
-    Ok(())
+mod save;
+
+pub fn export_inputs(path: &str, raw_inputs: Vec<u8>, rate: u8) -> std::io::Result<()> {
+    save(path.as_ref(), &raw_inputs, rate)
 }
