@@ -2,6 +2,9 @@
 name = "bram-input-exporter"
 version = "1.0.0"
 edition = "2024"
+authors = ["WatzTheleaf <louistheleaf@pm.me>"]
+description = "Exporter used in a personal gamedev project"
+license = "MIT"
 
 [dependencies]
 byteorder = "1.5.0"
